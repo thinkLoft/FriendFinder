@@ -58,10 +58,9 @@ module.exports = function(app) {
       ) {
         closestMatch.friend = friendData[i];
         closestMatch.difference = difference;
-        console.log(closestMatch);
       }
     }
-
+    // Return closest match object
     res.json(closestMatch.friend);
   });
 };
